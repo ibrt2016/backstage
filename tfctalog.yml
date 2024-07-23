@@ -2,10 +2,10 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: gcp-service-account-tmpl
-  title: Azure Linux VM Template
+  title: GCP Service Account Template
   description: This template generates a Terraform file for GCP Service Account and opens a PR in BitBucket
   tags:
-  - azure
+  - gcp
   - terraform
   links:
   - title: Documentation
@@ -15,10 +15,10 @@ spec:
   # The main purpose of this field is for display purposes in Backstage, so that 
   # people looking at catalog items can get an understanding of to whom this Template belongs. 
   # It is not to be used by automated processes to for example assign authorization in runtime systems. 
-  owner: IT
+  owner: you
   # The type of component created by the template, e.g. website. This is used for filtering templates, and 
   # should ideally match the Component spec.type created by the template.
-  type: azure_resource
+  type: gcp_resource
 
   # Ref: https://backstage.io/docs/features/software-templates/writing-templates#specparameters---formstep--formstep
   parameters:
